@@ -1,11 +1,13 @@
-processor emulation
+# processor emulation
+the idea of the project is to set some processors up and some tasks in an sqlite table, then the system to automate the running of the tasks
+
 this project has two python files. 
 
-create_database.py 
+## create_database.py 
 creates an SQLite database, generating and adding tasks to newly created table called SimulationData.
 it populates the table with a task number, a unique ID, task duration and end time
 
-run_processors.py 
+## run_processors.py 
 imports the queue module to create one and add all the tasks to the queue ordered by arrival time
 has a System class that utilises 3 instances of the Processor class in the same file
 this goes through the tasks in the queue based on a running clock
